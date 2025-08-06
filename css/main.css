@@ -9,7 +9,10 @@
     display: flex;
     align-items: center;
     height: 400px;
-    background-color: #FF7979;
+  
+}
+body{
+      background-color: #FF7979;
 }
 
 /* LEFT SIDE TEXT */
