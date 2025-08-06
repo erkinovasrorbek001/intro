@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat+Alternates:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap');
+
+/* NAVIGATION HEADER */
+.Header__nav {
+    max-width: 1000px;
+    margin: 5% auto;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #FF7979;
+}
+
+/* LEFT SIDE TEXT */
+.Header__left {
+    flex: 1;
+}
+
+.Header__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+    color: white;
+    width: 525px;
+}
+
+.Header__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    width: 425px;
+    margin-top: -15px;
+    color: #fff;
+}
+
+/* RIGHT SIDE FORM */
+.Header__right {
+    margin-left: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    background: #fff;
+    padding: 20px;
+    width: 420px;
+    margin-left: -25%;
+    border-radius: 10px;
+}
+.Header_span{
+    color: #FF7979;
+}
+/* INPUT FIELDS */
+input {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    max-width: 400px;
+}
+
+/* BUTTON */
+.Header__button {
+    padding: 10px 30px;
+    max-width: 425px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #38CC8B;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+.Header__left{
+    margin-right: 5%;
+}
+/* ADDITIONAL TEXT */
+.Header__highlight {
+    background: #5E54A4;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.Header__span {
+    font-weight: 200;
+}
+
+.Header__error {
+    color: red;
+    font-weight: 500;
+}
+.Header_text{
+    color: #fff;
+    font-weight: 900;
+}
+.Header__span{
+    font-weight: 200;
+}
+.Header_write {
+    font-weight: 500;
+    white-space: nowrap;
+    color: #000;
+}
+
+/************* responsive design **************************/
+@media (max-width:1025px) {
+    .Header__nav{
+        display: block;
+        margin: 0 auto;
+        height: 600px;
+    }
+    .Header__title{
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+    }
+    .Header__text{
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+    }
+    form{
+        margin: 0 auto;
+    }
+  
+   
+    .Header_text{
+        margin: 2% auto;
+        text-align: center;
+    }
+}
+@media (max-width:660px) {
+    .Header__nav{
+        margin: 0 auto;
+        height: 600px;
+    }
+    .Header__title{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .Header__text{
+        margin: 0 auto;
+        width: 80%;
+    }
+    form{
+        margin: 0 auto;
+
+    }
+    .Header_text{
+        margin: 3% auto;
+    }
+}
+@media (max-width:600px) {
+    .Header__title{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width:530px) {
+    form{
+        max-width: 350px;
+        width: 100%;
+    }
+    input{
+        width: 100%;
+        max-width: 330px;
+    }
+    .Header_write{
+        margin: 2% auto;
+        
+    }
+    .Header_span{
+        display: none;
+    }
+}
+@media (max-width:455px) {
+    form{
+        max-width: 320px;
+        width: 100%;
+    }
+    .Header__nav{
+        height: 450px;
+        padding: 15px;
+    }
+    input{
+        max-width: 300px;
+        width: 100%;
+    }
+    .Header__button{
+        width: 100%;
+        max-width: 320px;
+    }
+    .Header__title{
+        font-size: 30px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .Header__text{
+        font-size: 13px;
+        line-height: 14px;
+    }
+}
+@media (max-width:420px) {
+    form{
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    input{
+        max-width: 180px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Header_write{
+        display: none;
+    }
+}
+@media (max-width:330px) {
+    .Header__nav{
+        height: 500px;
+    }
+}
